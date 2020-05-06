@@ -8,6 +8,11 @@ Push the repo in github
 JENKINS:
 
 Job1 Task :
+(1) RedHat :
+        (i) create directory in /home/testing
+        (ii) Run docker
+        
+        
 (i) Select Git in SCM and Provide branch of "dev1"
 (ii) Select Build Trigger as Poll SCM
 (iii) Then type the following commands in Execute shell 
@@ -20,7 +25,13 @@ Job1 Task :
         fi
 (iv) Then Apply and Save
 
+
+
+
 Job2 Task :
+(1) RedHat :
+        (i) create directory in /home/testing
+        
 (i) Select Git in SCM and Provide branch of "Master"
 (ii) Select Build Trigger as Poll SCM
 (iii) Then type the following commands in Execute shell 
@@ -33,7 +44,14 @@ Job2 Task :
         fi
 (iv) Then Apply and Save
 
+
+
+
+
 Job3 Task :
+(1) RedHat :
+        (i) Clone your github repository in /home/demogit/AssignmentDevOps/
+        
 (i) Type the following in Execute Shell
         cd /home/demogit/AssignmentDevOps/
         sudo git fetch
@@ -43,6 +61,7 @@ Job3 Task :
         sudo git merge dev1
         sudo git commit . -m "dev1"
         sudo git push https://YOUR_GITHUB_USER_ID:YOUR_GITHUB_PASSWORD@github.com/YOUR_USER_ID/REPOSITORY_NAME.git
+        [NOTE: These code will update the master branch]
 [NOTE: If your password contain any '@' symbols then replace it by '%40']
 
 
